@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="EdtCuestionarioLargo" >350dp</dimen>
+    <dimen name="EdtCuestionarioAlto">50dp</dimen>
+    <dimen name="btnLargo" >200dp</dimen>
+    <dimen name="btnAlto">60dp</dimen>
+    <dimen name="btnPequenoLargo" >150dp</dimen>
+    <dimen name="btnPequenoAlto">60dp</dimen>
+</resources>

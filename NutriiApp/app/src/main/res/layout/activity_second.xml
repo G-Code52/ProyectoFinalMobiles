@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".SecondActivity">
+
+    <Button
+        android:id="@+id/btnContinuar2"
+        android:layout_width="@dimen/btnLargo"
+        android:layout_height="@dimen/btnAlto"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/RosaBotones"
+        android:text="@string/btnContinuar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtAntecedentes"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="@dimen/EdtCuestionarioAlto"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="31dp"
+        android:ems="10"
+        android:hint="@string/CuadroAntecedentes"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAntecedentes2" />
+
+    <TextView
+        android:id="@+id/txtPreguntas"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/TxtPreguntasClinicas"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAntecedentes"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="@dimen/EdtCuestionarioAlto"
+        android:layout_marginTop="20dp"
+        android:text="@string/Antecedentes"
+        android:textColor="@color/RosaNutriapp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPreguntas" />
+
+    <TextView
+        android:id="@+id/txtAntecedentes2"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/AntecedentesNoPatologicos"
+        android:textColor="@color/RosaNutriapp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swCancer" />
+
+    <Switch
+        android:id="@+id/swDiabetes"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="@dimen/EdtCuestionarioAlto"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="31dp"
+        android:text="@string/swDiabetes"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAntecedentes" />
+
+    <Switch
+        android:id="@+id/swHipertension"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="@dimen/EdtCuestionarioAlto"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="31dp"
+        android:text="@string/swHipertension"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swDiabetes" />
+
+    <Switch
+        android:id="@+id/swTiroides"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="@dimen/EdtCuestionarioAlto"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="31dp"
+        android:text="@string/swTiroides"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swHipertension" />
+
+    <Switch
+        android:id="@+id/swObseidad"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="@dimen/EdtCuestionarioAlto"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="31dp"
+        android:text="@string/swObesidad"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swTiroides" />
+
+    <Switch
+        android:id="@+id/swCancer"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="@dimen/EdtCuestionarioAlto"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="31dp"
+        android:text="@string/swCancer"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swObseidad" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

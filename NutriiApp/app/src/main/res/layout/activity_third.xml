@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ThirdActivity">
+
+    <Button
+        android:id="@+id/btnContinuar3"
+        android:layout_width="@dimen/btnLargo"
+        android:layout_height="@dimen/btnAlto"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/RosaBotones"
+        android:text="@string/btnContinuar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtFrecuencia"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/Frecuencia"
+        android:textColor="@color/RosaNutriapp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContinua" />
+
+    <TextView
+        android:id="@+id/txtContinua"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/Continua"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFrecuencia">
+
+        <RadioButton
+            android:id="@+id/rHombre"
+            android:layout_width="@dimen/EdtCuestionarioLargo"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/Moderada"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rMujer"
+            android:layout_width="@dimen/EdtCuestionarioLargo"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/Intensa"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/cbLigera"
+            android:layout_width="@dimen/EdtCuestionarioLargo"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/Ligera"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
