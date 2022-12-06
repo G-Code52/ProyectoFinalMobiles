@@ -40,4 +40,10 @@
     <string name="HabitosAlimenticios">Habitos Alimenticios</string>
     <string name="InstruccionMonto">Ingresa el monto</string>
     <string name="DeportePracticas">¿Qué deporte o ejercicio practicas?</string>
+    <string name="AbrirCamara">Abrir Camara</string>
+    <string name="MostrarUbicacion">Ubicacion</string>
+    <string name="MostrarDieta">Mostrar Dietas</string>
+    <string name="Salir">Salir</string>
+    <string name="Galeria">Galeria</string>
+    <string name="Camara">Camara</string>
 </resources>

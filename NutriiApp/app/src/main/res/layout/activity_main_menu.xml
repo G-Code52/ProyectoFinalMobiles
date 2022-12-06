@@ -23,7 +23,8 @@
         android:layout_height="@dimen/btnPequenoAlto"
         android:layout_marginStart="40dp"
         android:layout_marginTop="150dp"
-        android:text="Button"
+        android:backgroundTint="@color/RosaBotones"
+        android:text="@string/AbrirCamara"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgNutriilogo" />
 
@@ -33,7 +34,8 @@
         android:layout_height="@dimen/btnPequenoAlto"
         android:layout_marginStart="40dp"
         android:layout_marginTop="80dp"
-        android:text="Button"
+        android:backgroundTint="@color/RosaBotones"
+        android:text="@string/MostrarDieta"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCamara" />
 
@@ -43,7 +45,8 @@
         android:layout_height="@dimen/btnPequenoAlto"
         android:layout_marginTop="150dp"
         android:layout_marginEnd="40dp"
-        android:text="Button"
+        android:backgroundTint="@color/RosaBotones"
+        android:text="@string/MostrarUbicacion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgNutriilogo" />
 
@@ -53,7 +56,8 @@
         android:layout_height="@dimen/btnPequenoAlto"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="40dp"
-        android:text="Button"
+        android:backgroundTint="@color/RosaBotones"
+        android:text="@string/Salir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnUbicacion" />
 
