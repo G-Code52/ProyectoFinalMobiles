@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtBienvenida"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/Bienvenida"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtNombre"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="@dimen/EdtCuestionarioAlto"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/Nombre"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBienvenida" />
+
+    <EditText
+        android:id="@+id/edtNumCel"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="@dimen/EdtCuestionarioAlto"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/NumCel"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNombre" />
+
+    <EditText
+        android:id="@+id/edtFechaNacimiento"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="@dimen/EdtCuestionarioAlto"
+        android:layout_marginTop="20dp"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/FechaNacimiento"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNumCel" />
+
+    <EditText
+        android:id="@+id/edtHombreMujer"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="@dimen/EdtCuestionarioAlto"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/HombreMujer"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtFechaNacimiento" />
+
+    <Button
+        android:id="@+id/btnContinuar"
+        android:layout_width="@dimen/btnLargo"
+        android:layout_height="@dimen/btnAlto"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/RosaBotones"
+        android:text="@string/btnContinuar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

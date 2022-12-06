@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".FifthActivity">
+
+    <Button
+        android:id="@+id/btnContinuar5"
+        android:layout_width="@dimen/btnLargo"
+        android:layout_height="@dimen/btnAlto"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/RosaBotones"
+        android:text="@string/btnContinuar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbMenu1"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:buttonTint="@color/RosaBotones"
+        android:text="@string/UnMenuMes"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtMonto" />
+
+    <CheckBox
+        android:id="@+id/cbMenu2"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:buttonTint="@color/RosaBotones"
+        android:text="@string/MenuDosSemana"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbMenu1" />
+
+    <CheckBox
+        android:id="@+id/cbMenu3"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:buttonTint="@color/RosaBotones"
+        android:text="@string/MenuLaSemana"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbMenu2" />
+
+    <EditText
+        android:id="@+id/edtComidasDia"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="@dimen/EdtCuestionarioAlto"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/ComidasDia"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHabitos" />
+
+    <EditText
+        android:id="@+id/edtMonto"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="@dimen/EdtCuestionarioAlto"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/Monto"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMontoPlan" />
+
+    <EditText
+        android:id="@+id/edtIntolerante"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="@dimen/EdtCuestionarioAlto"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/AlimentosIntolerantes"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtComidasDia" />
+
+    <EditText
+        android:id="@+id/edtDisgusto"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="@dimen/EdtCuestionarioAlto"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/AlimentosDisgusto"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtIntolerante" />
+
+    <TextView
+        android:id="@+id/txtHabitos"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/HabitosAlimenticios"
+        android:textColor="@color/RosaNutriapp"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMontoPlan"
+        android:layout_width="@dimen/EdtCuestionarioLargo"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/InstruccionMonto"
+        android:textColor="@color/RosaNutriapp"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDisgusto" />
+</androidx.constraintlayout.widget.ConstraintLayout>
