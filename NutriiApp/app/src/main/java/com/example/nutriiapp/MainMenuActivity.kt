@@ -19,12 +19,22 @@ class MainMenuActivity : AppCompatActivity(), View.OnClickListener {
 
         btnCamara = findViewById(R.id.btnCamara)
         btnCamara!!.setOnClickListener(this)
+
+        btnUbicacion = findViewById(R.id.btnUbicacion)
+        btnUbicacion!!.setOnClickListener(this)
     }
 
     override fun onClick(view: View) {
         if (view.id == R.id.btnCamara){
             val packageName = "com.example.nutriiapp"
             val className = "com.example.nutriiapp.CameraActivity"
+
+            intent.setClassName(packageName, className)
+            startActivity(intent)
+        }
+        if (view.id == R.id.btnUbicacion){
+            val packageName = "com.example.nutriiapp"
+            val className = "com.example.nutriiapp.UbicationActivity"
 
             intent.setClassName(packageName, className)
             startActivity(intent)

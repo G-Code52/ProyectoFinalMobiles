@@ -55,7 +55,16 @@
         app:layout_constraintTop_toBottomOf="@+id/txtFrecuencia">
 
         <RadioButton
-            android:id="@+id/rHombre"
+            android:id="@+id/cbLigera"
+            android:layout_width="@dimen/EdtCuestionarioLargo"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/Ligera"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/cbModerada"
             android:layout_width="@dimen/EdtCuestionarioLargo"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
@@ -64,7 +73,7 @@
             android:textSize="24sp" />
 
         <RadioButton
-            android:id="@+id/rMujer"
+            android:id="@+id/cbIntensa"
             android:layout_width="@dimen/EdtCuestionarioLargo"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
@@ -72,14 +81,6 @@
             android:textColor="#FFFFFF"
             android:textSize="24sp" />
 
-        <RadioButton
-            android:id="@+id/cbLigera"
-            android:layout_width="@dimen/EdtCuestionarioLargo"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="@string/Ligera"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp" />
     </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

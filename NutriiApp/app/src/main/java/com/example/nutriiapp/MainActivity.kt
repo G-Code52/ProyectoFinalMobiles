@@ -2,7 +2,6 @@ package com.example.nutriiapp
 
 import android.content.SharedPreferences
 import android.os.Bundle
-import android.provider.MediaStore.Audio.Radio
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -40,8 +39,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         edtNombre = findViewById(R.id.edtNombre)
         edtFechaNacimiento = findViewById(R.id.edtFechaNacimiento)
         edtNumCel = findViewById(R.id.edtNumCel)
-        rHombre = findViewById(R.id.rHombre)
-        rMujer = findViewById(R.id.rMujer)
+        rHombre = findViewById(R.id.cbModerada)
+        rMujer = findViewById(R.id.cbIntensa)
         btnContinuar = findViewById(R.id.btnContinuar)
 
         btnContinuar!!.setOnClickListener(this)

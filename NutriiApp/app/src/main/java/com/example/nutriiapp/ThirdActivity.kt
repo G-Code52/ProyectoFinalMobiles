@@ -1,9 +1,9 @@
 package com.example.nutriiapp
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.CheckBox
 import android.widget.RadioButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -19,13 +19,14 @@ class ThirdActivity : AppCompatActivity(), View.OnClickListener {
 
     var amount = ""
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third)
 
         cbLigera = findViewById(R.id.cbLigera)
-        cbModerada = findViewById(R.id.rHombre)
-        cbIntensa = findViewById(R.id.rMujer)
+        cbModerada = findViewById(R.id.cbModerada)
+        cbIntensa = findViewById(R.id.cbIntensa)
 
         btnContinuar3 = findViewById(R.id.btnContinuar3)
         btnContinuar3!!.setOnClickListener(this)
