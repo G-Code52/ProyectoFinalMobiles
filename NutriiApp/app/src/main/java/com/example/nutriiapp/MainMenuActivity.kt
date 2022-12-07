@@ -9,8 +9,6 @@ import android.widget.Button
 
 private var btnCamara:Button? = null
 private var btnUbicacion: Button? = null
-private var btnDietas: Button? = null
-private var btnSalir: Button? = null
 
 class MainMenuActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
