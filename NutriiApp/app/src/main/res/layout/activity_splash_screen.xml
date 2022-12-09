@@ -8,28 +8,10 @@
     tools:context=".SplashScreen">
 
     <ImageView
-        android:id="@+id/imgNutriiBackground"
-        android:layout_width="415dp"
-        android:layout_height="752dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.523"
-        app:srcCompat="@drawable/nutri" />
-
-    <TextView
-        android:id="@+id/txtNutriiApp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/chango"
-        android:text="@string/NutriiApp"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.799"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.524" />
+        android:id="@+id/imageView"
+        android:layout_width="521dp"
+        android:layout_height="862dp"
+        app:srcCompat="@drawable/nutriapp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="-66dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
